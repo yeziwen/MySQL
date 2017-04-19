@@ -1,0 +1,12 @@
+http://www.cnblogs.com/coolhtm/archive/2015/04/09/4411036.html
+MyISAM不支持事务的存储引擎。
+InnoDB 支持
+show variables like 'autocommit'\G
+
+set autocommit = 1;ON，表示autocommit开启 
+执行了START TRANSACTION或BEGIN命令（MySQL事务处理-删除后回滚）后
+将不会自动提交了，只有明确执行了COMMIT命令后才会被提交，
+在这之前可以执行ROLLBACK 命令回滚更新操作
+
+
+set autocommit = 0,off，表示autocommit关闭 

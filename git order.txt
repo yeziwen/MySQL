@@ -1,0 +1,11 @@
+git init
+git remote add origin https://github.com/yeziwen/MySql.git
+git pull origin master
+
+
+git add "xx.txt"
+or 
+git add .
+
+git commit -m 'words'
+git push origin master
